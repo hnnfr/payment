@@ -1,4 +1,12 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /api
+
 spring:
+  mvc:
+    format:
+      date-time: yyyy-MM-dd'T'HH:mm:ss
   application:
     name: payment
   datasource:
@@ -13,7 +21,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        dialect: org.hibernate.dialect.PostgreSQLDialect
 ibm:
   mq:
     host: localhost
